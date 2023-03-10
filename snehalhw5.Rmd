@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## R Markdown
-``{r}
+```{r}
 choco <- read.csv("https://ds202-at-isu.github.io/labs/data/choco.csv")
 head(choco)
 ```
@@ -18,12 +18,12 @@ head(choco)
 nrow(choco)
 ```
 ```{r}
-
 library(ggplot2)
 
 ggplot(choco, aes(x = Review.Date)) +
   geom_bar()
 ```
+
 ```{r}
 library(ggplot2)
 
@@ -32,7 +32,6 @@ ggplot(choco, aes(x = Rating)) +
   ggtitle("Distribution of Chocolate Ratings") +
   xlab("Rating") +
   ylab("Count")
-
 ```
 
 ```{r}
@@ -49,6 +48,7 @@ ggplot(top3, aes(x = Company.Location, y = Rating)) +
   ylab("Rating")
 
 ```
+
 ```{r}
 library(ggplot2)
 
@@ -57,6 +57,5 @@ ggplot(choco, aes(x = Cocoa.Pct, y = Rating)) +
   ggtitle("Rating vs. Cocoa Percentage") +
   xlab("Cocoa Percentage") +
   ylab("Rating")
-
 ```
 
