@@ -82,12 +82,14 @@ ggplot(company_summary, aes(x = Num_Reviews, y = Avg_Rating)) +
 ```
 
 #Tara's question
+```{r}
 #What is the relationship between company location and cocoa percentages?
 ggplot(top3, aes(x = Cocoa.Pct, y = Company.Location)) +
   geom_boxplot(fill = "dodgerblue", color = "black") +
   ggtitle("Distribution of Company Location by Cocoa Percentage") +
   xlab("Cocoa Percentage") +
   ylab("Company locations")
+```
 
 
 ```{r}
@@ -100,4 +102,6 @@ ggplot(top3, aes(x = Company.Location, y = Review.Date)) +
   ylab("Review Date")
 ```
 
+workflow
+Snehal created a repository in github and added Tara and I as collaborators. Then each of us split the questions and created a graph using ggplot2 to answer the questions. After one us changed something, we commited that change in our repository to keep it up to date.  
 
